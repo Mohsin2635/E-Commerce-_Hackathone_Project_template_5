@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "E-Comerce Website",
+  title: "Functional E-Comerce Website",
   description: "Build by Mohsin full-stack developer",
 };
 

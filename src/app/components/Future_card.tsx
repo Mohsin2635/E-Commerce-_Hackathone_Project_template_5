@@ -16,8 +16,8 @@ const Future_card = ({ image }: { image: StaticImageData }) => {
                         <p>New</p>
                     </div>
                     <h5 className="font-bold text-[#252B42]">Loudest a la Madison #1
-                        L'integral </h5>
-                    <p className="text-sm font-bold text-[#737373]">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        Lintegral </h5>
+                    <p className="text-sm font-bold text-[#737373]">We focus on ergonomics and meeting you where you work. Its only a keystroke away.</p>
                     <div className="w-[104px] h-[24px] flex justify-between items-center">
                         <p className="text-sm font-bold">Learn More</p>
                         <FaAngleRight size={20} />

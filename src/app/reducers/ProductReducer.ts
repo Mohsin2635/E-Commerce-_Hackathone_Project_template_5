@@ -4,8 +4,8 @@ import { Product } from "../components/Product_Image";
 export interface ProductState {
   isLoading: boolean;
   isError: boolean;
-  products: Product[]; // Refine this based on product structure
-  singleProduct: any | null; // Refine this based on single product structure
+  products: Product[];
+  singleProduct:  Product | null; 
   isSingleLoading: boolean;
 }
 
@@ -29,7 +29,7 @@ interface SetSingleLoadingAction {
 
 interface GetSingleProductAction {
   type: "GET_SINGLE_PRODUCT";
-  payload: Product; // Refine this based on single product structure
+  payload: any // Refine this based on single product structure
 }
 
 interface SingleErrorAction {

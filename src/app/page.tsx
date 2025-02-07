@@ -20,8 +20,8 @@ export default function Home() {
 
         {/* Hero Section */}
         <div className="relative" >
-          <Image src={hero_image} alt="" priority className="w-full h-[753px] object-cover" />
-          <div className="md:w-[1044px] md:h-[427px] h-[361px] space-y-[35px] text-[#FFFFFF] place-items-center md:place-items-start absolute md:top-44 top-56 left-16 md:left-[197px] 2xl:left-[400px] place-content-center z-30">
+          <Image src={hero_image} alt="" priority className="w-full h-screen object-cover xl:object-fill" />
+          <div className="md:w-[1044px] md:h-[427px] h-[361px] space-y-[35px] text-[#FFFFFF] place-items-center md:place-items-start absolute md:top-20 2xl:top-44 top-56 left-10 md:left-[197px] 2xl:left-[400px] place-content-center z-30">
             <h5 className="font-bold">SUMMER 2020</h5>
             <h2 className="text-[40px] leading-[50px] w-[268px] h-[100px] md:w-full text-center md:text-start font-bold">NEW COLLECTION</h2>
             <p className="text-[20px] leading-[30px] w-[291px] md:w-[376px] md:h-[60px] h-[90px] text-center md:text-start font-normal">We know how large objects

@@ -83,7 +83,7 @@ const page = () => {
                 <div className="w-full h-full flex justify-center items-center lg:px-[12%] px-[2%]">
 
                     <div className="h-full w-[328px] md:w-full space-y-[48px] sm:space-y-0 py-20 place-items-center">
-                        <div className="w-full h-full space-y-[30px] sm:space-y-0  items-center justify-between">
+                        <div className="w-full h-full space-y-[30px] sm:space-y-0  items-center justify-between place-items-center">
                             <Product_Image />
                         </div>
                         <div className="w-full h-full place-items-center place-content-center">

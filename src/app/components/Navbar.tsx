@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 <div className="flex justify-between items-center md:w-[815px] lg:ml-6 gap-10">
 
-                    <ul className="hidden md:flex h-full items-center text-[#737373] font-bold text-sm gap-10 ">
+                    <ul className="hidden lg:flex h-full items-center text-[#737373] font-bold text-sm gap-10 ">
                         <li>
                             <Link href="/" className={val === "/" ? "border-b-4 border-[#4c9eb3] text-[#737373]" : ""}>
                                 Home
@@ -71,13 +71,13 @@ const Navbar = () => {
                         </li>
 
                     </ul>
-                    <div className="w-full h-full text-sm font-bold hidden md:flex items-center px-5 justify-between">
-                        <p className="text-[#23A6F0] cursor-pointer">Login / Register</p>
+                    <div className="w-full h-full text-sm font-bold hidden lg:flex items-center px-5 justify-between">
+                        <p className="hidden lg:block text-[#23A6F0] cursor-pointer">Login / Register</p>
                         <div className=" flex items-center cursor-pointer gap-5 ">
                             <FaSearch size={24} color="#737373" className={isSearchbarOpen === true ? "hidden" : "block"} onClick={SearchBar} />
 
 
-                            <Link href={"/components/Shoping_Cart"}>
+                            <Link href={"/components/AddToCartPage"}>
                                 <div className={isSearchbarOpen === true ? "hidden" : "block relative"}>
                                     <FaShoppingCart size={24} color="#737373" />
                                     <div className="absolute top-[11px] right-[-6px] rounded-full w-4 h-4 bg-black flex justify-center items-center"><span className="text-[#23A6F0]">5</span></div>
@@ -112,9 +112,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="flex gap-5 items-center ">
-                    <div className="flex md:hidden items-center cursor-pointer gap-5 ">
+                    <div className="flex lg:hidden items-center cursor-pointer gap-5 ">
                         <FaSearch size={24} color="#737373" />
-                        <Link href={"/components/Shoping_Cart"}>
+                        <Link href={"/components/AddToCartPage"}>
                             <div className="relative">
                                 <FaShoppingCart size={24} color="#737373" />
                                 <div className="absolute top-[11px] right-[-6px] rounded-full w-4 h-4 bg-black flex justify-center items-center"><span className="text-[#23A6F0]">5</span></div>
@@ -124,7 +124,7 @@ const Navbar = () => {
                     </div>
 
 
-                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:hidden cursor-pointer"
+                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="lg:hidden cursor-pointer"
                         onClick={toggleSidebar}>
                         <path d="M0.571533 0H23.4287V2.28571H0.571533V0ZM6.28582 5.71429H23.4287V8H6.28582V5.71429ZM13.4287 11.4286H23.4287V13.7143H13.4287V11.4286Z" fill="#252B42" />
                     </svg>
@@ -136,7 +136,7 @@ const Navbar = () => {
 
             {isSidebarOpen && (
 
-                <div className="w-full h-[532px] bg-white relative top-[0px] z-50 transition-transform duration-300 ease-in-out">
+                <div className="w-full h-[562px] bg-white relative top-[0px] z-50 transition-transform duration-300 ease-in-out">
                     <div className="w-full h-screen " onClick={toggleSidebar}>
 
                         <ul className="flex flex-col w-full text-[#737373] text-[30px] justify-center items-center py-24 space-y-[30px] font-bold">
@@ -167,6 +167,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
 
+                        <p className="text-[#23A6F0] cursor-pointer">Login / Register</p>
                         </ul>
                     </div>
                 </div>

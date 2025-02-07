@@ -30,12 +30,12 @@ const Product_Image = () => {
   // console.log(product);
 
   // Render Component
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className="my-10 text-2xl font-semibold italic">Loading Products ......</div>;
 
   return (
     <>
       <div className="h-full cursor-pointer place-items-center relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
-        {products?.map((product: Product, index: number) => (
+        {products?.map((product: Product) => (
           <div key={product._id} className="hover:-translate-y-1 duration-500">
             <Link href={`/components/SingleProduct/${product._id}`}>
               <div className="w-[350px] xl:w-[240px] h-[322px]">

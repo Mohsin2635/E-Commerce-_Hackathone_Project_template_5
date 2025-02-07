@@ -75,8 +75,8 @@ const Page = () => {
 
             <PiArrowBendRightDownBold color="skyblue" size={79} />
             <div className="w-full h-[216px] space-y-[36px] text-[#252B42] font-bold place-items-center ">
-              <h5>WE Can't WAIT TO MEET YOU</h5>
-              <h1 className="text-6xl">Let's Talk</h1>
+              <h5>WE Cant WAIT TO MEET YOU</h5>
+              <h1 className="text-6xl">Lets Talk</h1>
               <div className="w-[186px] h-[52px] rounded py-[15px] px-10 bg-[#23A6F0] text-white place-items-center hover:bg-[#2e8fc7] duration-300">
                 <button className="text-sm text-center md:text-start font-bold">Try it free now</button>
               </div>
