@@ -29,7 +29,7 @@ interface SetSingleLoadingAction {
 
 interface GetSingleProductAction {
   type: "GET_SINGLE_PRODUCT";
-  payload: any // Refine this based on single product structure
+  payload: Product // Refine this based on single product structure
 }
 
 interface SingleErrorAction {
